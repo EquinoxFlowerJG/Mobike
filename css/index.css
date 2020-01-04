@@ -316,7 +316,7 @@ header nav a.head-mobile::after{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
+    flex-wrap: wrap;
 }
 .main .description .description-link{
     display: -webkit-box;
@@ -347,6 +347,12 @@ header nav a.head-mobile::after{
     -ms-flex: 1;
     flex: 1;
     }
+    .main .description .description-link:first-child{
+        width: 50%;
+    }
+    .main .description .description-link:nth-child(2){
+        width: 50%;
+    }
 }
 @media (max-width:640px) {
     .main .description .description-link{
@@ -371,18 +377,137 @@ header nav a.head-mobile::after{
     font-weight: 300;
 }
 
+footer{
+    border-top: 1px solid #eee;
+}
+footer a{
+    display: inline-block;
+    color: #000;
+}
+footer .links{
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+footer .links .links-top{
+    margin-right: 40px;
+    -webkit-box-flex: 2;
+    flex-grow: 2;
 
+}
+footer .links .links-top{
+    line-height: 2.3;
+}
+footer .links .links-top img{
+    width: 160px;
+    margin-bottom: 10px;
+}
+footer .links .links-bottom{
+    width: 100%;
+}
+@media (max-width:2156px){
+    footer .links .links-bottom{
+        width: 50%;
+    }
+}
+@media (max-width:760px){
+    footer .links .links-bottom{
+        width: 100%;
+    }
+}
+footer .links .links-bottom div.bottom-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    /* text-align: left; */
+}
+footer .links .links-bottom div.bottom-wrap div.shit{
+    -webkit-box-flex: 1;
+    -ms-flexbox: 1;
+    flex: 1;
+    flex-grow: 3;
+}
+footer .links .links-bottom div.bottom-wrap div.shit h3{
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+footer .links .links-bottom div.bottom-wrap div.shit ul a{
+    font-size: 15px;
+    line-height: 2;
+    transition: color .2s ease;
+}
+footer .links .links-bottom div.bottom-wrap div.shit ul a:hover{
+    color: #e23d0e;
+}
 
+@media (max-width:640px){
+    footer .links .links-bottom{
+        width: 50%;
+    }
+    footer .links .links-bottom div.bottom-wrap div.shit{
+        max-width: 116px;
+        min-width: 60px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
+footer .safty{
+    border-top: 1px solid #eee;
+}
+footer .safty-contain{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;-webkit-box-align: center;
+    align-items: center;
+}
+footer .safty .safty-info{
+    font-size: 12px;
+    margin-top: 4px;
+    color: #aaa;
+    flex-grow: 2;
+    line-height: 2.3;
+}
+@media (max-width: 640px){
+    footer .safty .safty-info {
+        margin-bottom: 40px;
+    }
+}
+footer .safty i{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url('../images/beian-icon.png') no-repeat left top/contain;
+}
+footer .safty .safty-logo{
+    -webkit-box-flex: 1;
+    -ms-flexbox: 1;
+    flex: 1;
+    flex-grow: 0;
+    line-height: 2.3;
+    width: 100%;
+    height: 100%;
+}
+footer .safty img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    
+}
 
 
 
